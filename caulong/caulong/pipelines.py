@@ -16,7 +16,7 @@ import os
 
 class MongoDBCauLongPipeline:
     def __init__(self):
-        self.client = pymongo.MongoClient('mongodb://192.168.1.30:27017')
+        self.client = pymongo.MongoClient('mongodb://192.168.1.69:27017')
         self.db = self.client['dbcaulong'] #Create Database      
         pass
     def process_item(self, item, spider):
